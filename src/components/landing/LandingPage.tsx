@@ -92,12 +92,12 @@ export default function LandingPage({ onBrowse }: Props) {
             📁 browse templates
           </PillButton>
           <a
-            href="https://buymeacoffee.com/teeluck27"
+            href="https://buymeachai.in/tilakdoesstuff"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center gap-1.5 rounded-full border-2 border-accent bg-[#FFDD00] px-7 py-3 text-lg font-sans font-semibold text-ink transition hover:-translate-y-0.5 active:translate-y-0"
           >
-            ☕ Buy me a coffee
+            ☕ Buy me a chai
             <span aria-hidden>↗</span>
           </a>
         </motion.div>
