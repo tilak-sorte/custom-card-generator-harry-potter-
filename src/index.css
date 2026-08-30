@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Caveat:wght@500;700&family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..600&family=IM+Fell+English+SC&family=Press+Start+2P&family=Space+Mono:wght@400;700&family=VT323&display=swap');
+@import "tailwindcss";
+
+@font-face {
+  font-family: "HarryP";
+  src: url("./assets/fonts/HarryP.ttf") format("truetype");
+  font-display: swap;
+}
+
+@theme {
+  --font-display: "Fraunces", serif;
+  --font-sans: "Bricolage Grotesque", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "Space Mono", ui-monospace, monospace;
+  --font-hp: "HarryP", "IM Fell English SC", serif;
+  --font-pixel: "Press Start 2P", "VT323", monospace;
+  --color-paper: #f6f1e9;
+  --color-ink: #d20a2e;
+}
+
+@utility bg-grid {
+  background-image:
+    linear-gradient(rgba(27, 26, 23, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(27, 26, 23, 0.06) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+:root {
+  --paper: #f6f1e9;
+  --ink: #d20a2e;
+  --font-display: "Fraunces", serif;
+  --font-sans: "Bricolage Grotesque", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "Space Mono", ui-monospace, monospace;
+  --font-hp: "HarryP", "IM Fell English SC", serif;
+  --font-pixel: "Press Start 2P", "VT323", monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100%;
+}
+
+body {
+  font-family: var(--font-sans);
+  background: var(--paper);
+  color: var(--ink);
+}
+
+.handwriting {
+  font-family: var(--font-hp);
+  font-weight: 400;
+}
+
+/* editable fields drawn directly on the card face */
+.card-field {
+  caret-color: #20201d;
+}
+.card-field::placeholder {
+  color: rgba(32, 32, 29, 0.38);
+  opacity: 1;
+}
+.card-field:focus {
+  background: rgba(32, 32, 29, 0.06);
+}
+.card-field:focus::selection,
+.card-field::selection {
+  background: rgba(32, 32, 29, 0.18);
+}
+
+/* Buy Me A Coffee button — match the landing page pill button style */
+.bmc-wrap [id^="bmc"], 
+.bmc-wrap iframe {
+  border: 2px solid var(--ink) !important;
+  border-radius: 9999px !important;
+  font-family: var(--font-sans) !important;
+  font-weight: 600 !important;
+  font-size: inherit !important;
+  transition: transform 0.2s ease, box-shadow 0.2s ease !important;
+}
+.bmc-wrap iframe:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(27, 26, 23, 0.15);
+}

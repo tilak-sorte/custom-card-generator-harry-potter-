@@ -1,0 +1,13 @@
+node_modules
+dist
+.DS_Store
+*.local
+*.log
+
+# stray root duplicates / scratch files
+harry.png
+hat.png
+objects.png
+PinClipart.com_harry-potter-wand-clipart_5247274.png
+vinyl bg.jpg
+antigravity-prompt.md
