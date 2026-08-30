@@ -13,7 +13,7 @@ interface Props {
 export default function LandingPage({ onBrowse }: Props) {
   const vw = typeof window !== 'undefined' ? window.innerWidth : 1280;
   const vh = typeof window !== 'undefined' ? window.innerHeight : 800;
-  const w = Math.min(210, vw * 0.5);
+  const w = Math.min(140, vw * 0.3);
 
   return (
     <div className="relative min-h-screen w-full overflow-hidden bg-paper bg-grid">
