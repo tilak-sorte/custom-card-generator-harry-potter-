@@ -1,9 +1,9 @@
 import { motion } from 'framer-motion';
 import PillButton from '../ui/PillButton';
 import DraggableImage from '../ui/DraggableImage';
-import hatImg from '../../assets/hero/hat.png';
-import harryImg from '../../assets/hero/harry.png';
-import objectsImg from '../../assets/hero/objects.png';
+import hatImg from '../../assets/hero/wand-logo.png';
+import harryImg from '../../assets/hero/wand-logo.png';
+import objectsImg from '../../assets/hero/wand-logo.png';
 import wandImg from '../../assets/hero/wand-logo.png';
 
 interface Props {
