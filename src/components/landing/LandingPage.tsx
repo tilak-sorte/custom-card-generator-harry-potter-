@@ -127,27 +127,27 @@ export default function LandingPage({ onBrowse }: Props) {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.6 }}
-              viewBox="0 0 150 44"
+              viewBox="0 0 200 42"
               aria-hidden
               style={{ fontFamily: 'Caveat, cursive' }}
-              className="pointer-events-none absolute -left-[118px] top-1/2 hidden w-[110px] -translate-y-1/2 text-ink/70 sm:block"
+              className="pointer-events-none absolute left-full top-1/2 ml-4 hidden w-[160px] -translate-y-1/2 text-ink/70 sm:block"
             >
               <defs>
-                <marker id="donateArrow" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+                <marker id="donateArrow" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto-start-reverse">
                   <path d="M0 0 L8 4 L0 8 z" fill="currentColor" />
                 </marker>
               </defs>
               <path
                 id="donateCurve"
-                d="M6 36 C 34 32, 50 16, 144 4"
+                d="M14 20 L 178 24"
                 fill="none"
                 stroke="currentColor"
                 strokeWidth="2"
                 strokeDasharray="5 3"
                 strokeLinecap="round"
-                markerEnd="url(#donateArrow)"
+                markerStart="url(#donateArrow)"
               />
-              <text className="fill-current text-[15px] font-bold tracking-wide">
+              <text className="fill-current text-[17px] font-bold tracking-wide">
                 <textPath href="#donateCurve" startOffset="8%">
                   consider donating
                 </textPath>
@@ -159,30 +159,28 @@ export default function LandingPage({ onBrowse }: Props) {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.6 }}
-              viewBox="0 0 150 60"
+              viewBox="0 0 220 58"
               aria-hidden
               style={{ fontFamily: 'Caveat, cursive' }}
-              className="pointer-events-none absolute bottom-full left-1/2 mb-1.5 w-[140px] -translate-x-1/2 text-ink sm:hidden"
+              className="pointer-events-none absolute left-1/2 top-full mt-2 w-[190px] -translate-x-1/2 text-ink sm:hidden"
             >
               <defs>
-                <marker id="donateArrowM" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
-                  <path d="M0 0 L8 4 L0 8 z" fill="currentColor" />
+                <marker id="donateArrowM" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto-start-reverse">
+                  <path d="M0 3 L8 4.5 L0 6 L2 4.5 z" fill="currentColor" />
                 </marker>
               </defs>
               <path
                 id="donateCurveM"
-                d="M8 12 C 40 6, 60 20, 72 46"
+                d="M110 8 L 110 30"
                 fill="none"
                 stroke="currentColor"
                 strokeWidth="2"
                 strokeDasharray="5 3"
                 strokeLinecap="round"
-                markerEnd="url(#donateArrowM)"
+                markerStart="url(#donateArrowM)"
               />
-              <text className="fill-current text-[17px] font-bold tracking-wide">
-                <textPath href="#donateCurveM" startOffset="6%">
-                  consider donating
-                </textPath>
+              <text x="110" y="50" textAnchor="middle" className="fill-current text-[18px] font-bold tracking-wide">
+                consider donating
               </text>
             </motion.svg>
           </span>
