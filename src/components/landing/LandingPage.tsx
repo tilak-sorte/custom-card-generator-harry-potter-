@@ -42,26 +42,26 @@ export default function LandingPage({ onBrowse }: Props) {
         src={object1Img}
         alt="magical object 1"
         initialX={vw * 0.1}
-        initialY={vh * 0.6}
-        width={w * 0.5}
+        initialY={vh * 0.62}
+        width={w * 0.4}
         zIndex={32}
         aspectRatio={210 / 170}
       />
       <DraggableImage
         src={object2Img}
         alt="magical object 2"
-        initialX={vw * 0.02}
-        initialY={vh * 0.7}
-        width={w * 0.9}
+        initialX={vw * 0.04}
+        initialY={vh * 0.72}
+        width={w * 0.5}
         zIndex={31}
         aspectRatio={370 / 270}
       />
       <DraggableImage
         src={object3Img}
         alt="magical object 3"
-        initialX={vw * 0.45}
+        initialX={vw * 0.5}
         initialY={vh * 0.68}
-        width={w * 0.85}
+        width={w * 0.55}
         zIndex={33}
         aspectRatio={370 / 340}
       />
