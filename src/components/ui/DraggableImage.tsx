@@ -110,8 +110,8 @@ export default function DraggableImage({
   const endDrag = () => {
     grabbed.current.on = false;
     const d = drift.current;
-    d.baseX = target.current.x;
-    d.baseY = target.current.y;
+    d.baseX = clamp(target.current.x, 0, window.innerWidth - width);
+    d.baseY = clamp(target.current.y, 0, window.innerHeight - height);
     const el = elRef.current;
     if (el) el.style.cursor = 'grab';
   };

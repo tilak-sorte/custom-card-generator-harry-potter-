@@ -116,9 +116,10 @@ export default function CardCustomizeForm({
         <div className="flex items-center justify-between">
           <button
             onClick={onBack}
-            className="flex items-center gap-1 font-mono text-lg hover:underline"
+            className="flex items-center gap-1 font-mono text-sm hover:underline sm:text-lg"
           >
-            ← choose a different house
+            ← <span className="hidden sm:inline">choose a different house</span>
+            <span className="sm:hidden">back</span>
           </button>
           <div className="flex items-center gap-3">
             <span className="font-display text-xl italic sm:text-2xl">
@@ -186,7 +187,7 @@ export default function CardCustomizeForm({
               Customization
             </div>
 
-            <div className="grid grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
               {/* 01 — Card Style */}
               <div className="flex flex-col gap-3">
                 <p className="font-mono text-[11px] uppercase tracking-[0.2em] opacity-70">

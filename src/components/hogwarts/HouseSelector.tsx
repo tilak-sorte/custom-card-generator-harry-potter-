@@ -27,7 +27,7 @@ export default function HouseSelector({ onBack, onSelect }: Props) {
       </PillButton>
 
       <div
-        className="mx-auto mb-12 flex max-w-3xl flex-col items-center justify-center p-20 text-center"
+        className="mx-auto mb-12 flex max-w-3xl flex-col items-center justify-center p-8 text-center sm:p-20"
         style={{
           backgroundImage: `url(${hpBackground})`,
           backgroundSize: 'cover',
