@@ -186,7 +186,7 @@ export default function LandingPage({ onBrowse }: Props) {
           </span>
         </motion.div>
 
-        <p className="mt-6 font-mono text-xs tracking-wide text-ink/50">
+        <p className="mt-12 font-mono text-xs tracking-wide text-ink/50">
           drag the props around · they don't do anything, they're just fun
         </p>
       </div>
