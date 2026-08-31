@@ -41,27 +41,27 @@ export default function LandingPage({ onBrowse }: Props) {
       <DraggableImage
         src={object1Img}
         alt="magical object 1"
-        initialX={vw * 0.1}
-        initialY={vh * 0.62}
-        width={w * 0.4}
+        initialX={vw * 0.02}
+        initialY={vh * 0.52}
+        width={w * 0.35}
         zIndex={32}
         aspectRatio={210 / 170}
       />
       <DraggableImage
         src={object2Img}
         alt="magical object 2"
-        initialX={vw * 0.04}
-        initialY={vh * 0.72}
-        width={w * 0.5}
+        initialX={vw * 0.72}
+        initialY={vh * 0.5}
+        width={w * 0.4}
         zIndex={31}
         aspectRatio={370 / 270}
       />
       <DraggableImage
         src={object3Img}
         alt="magical object 3"
-        initialX={vw * 0.5}
-        initialY={vh * 0.68}
-        width={w * 0.55}
+        initialX={vw * 0.02}
+        initialY={vh * 0.84}
+        width={w * 0.45}
         zIndex={33}
         aspectRatio={370 / 340}
       />
@@ -120,6 +120,31 @@ export default function LandingPage({ onBrowse }: Props) {
             ☕ Buy me a chai
             <span aria-hidden>↗</span>
           </a>
+
+          {/* curved nudge pointing into the buy-me-a-chai button */}
+          <motion.svg
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.6 }}
+            viewBox="0 0 120 40"
+            aria-hidden
+            className="pointer-events-none -mb-1 ml-1 w-[110px] text-ink/70"
+          >
+            <path
+              id="donateCurve"
+              d="M2 34 C 30 30, 44 16, 118 2"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="1.5"
+              strokeDasharray="4 3"
+              strokeLinecap="round"
+            />
+            <text className="fill-current font-mono text-[10px] tracking-wide">
+              <textPath href="#donateCurve" startOffset="28%">
+                consider donating
+              </textPath>
+            </text>
+          </motion.svg>
         </motion.div>
 
         <p className="mt-6 font-mono text-xs tracking-wide text-ink/50">
