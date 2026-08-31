@@ -3,7 +3,9 @@ import PillButton from '../ui/PillButton';
 import DraggableImage from '../ui/DraggableImage';
 import hatImg from '../../assets/hero/hat.png';
 import harryImg from '../../assets/hero/harry.png';
-import objectsImg from '../../assets/hero/objects.png';
+import object1Img from '../../assets/hero/object1.png';
+import object2Img from '../../assets/hero/object2.png';
+import object3Img from '../../assets/hero/object3.png';
 import wandImg from '../../assets/hero/wand-logo.png';
 
 interface Props {
@@ -37,13 +39,31 @@ export default function LandingPage({ onBrowse }: Props) {
         aspectRatio={677 / 1119}
       />
       <DraggableImage
-        src={objectsImg}
-        alt="magical objects"
+        src={object1Img}
+        alt="magical object 1"
         initialX={vw * 0.1}
-        initialY={vh * 0.68}
-        width={w}
+        initialY={vh * 0.6}
+        width={w * 0.5}
         zIndex={32}
-        aspectRatio={601 / 821}
+        aspectRatio={210 / 170}
+      />
+      <DraggableImage
+        src={object2Img}
+        alt="magical object 2"
+        initialX={vw * 0.02}
+        initialY={vh * 0.7}
+        width={w * 0.9}
+        zIndex={31}
+        aspectRatio={370 / 270}
+      />
+      <DraggableImage
+        src={object3Img}
+        alt="magical object 3"
+        initialX={vw * 0.45}
+        initialY={vh * 0.68}
+        width={w * 0.85}
+        zIndex={33}
+        aspectRatio={370 / 340}
       />
       <DraggableImage
         src={wandImg}
