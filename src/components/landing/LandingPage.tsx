@@ -112,14 +112,8 @@ export default function LandingPage({ onBrowse }: Props) {
             📁 browse templates
           </PillButton>
           <span className="relative inline-flex items-center">
-            <a
-              href="https://buymeatea.online/teeluck"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-1.5 rounded-full border-2 border-accent bg-[#FFDD00] px-7 py-3 text-lg font-sans font-semibold text-ink transition hover:-translate-y-0.5 active:translate-y-0"
-            >
-              ☕ Buy me a tea
-              <span aria-hidden>↗</span>
+            <a href="https://kulhad.co/tilakdoestuff" target="_blank" rel="noopener noreferrer" className="transition hover:-translate-y-0.5 active:translate-y-0">
+              <img src="https://kulhad.co/api/button.png?text=Buy%20me%20a%20kulhad&amp;color=%238E3414" alt="Buy me a kulhad" height="44" />
             </a>
 
             {/* handwritten curve pointing into the buy-me-a-tea button */}
