@@ -53,6 +53,16 @@ export default function EnjoyPage({ houseName, houseEmoji, accent, onMakeAnother
             📸 Follow me
             <span aria-hidden>↗</span>
           </a>
+          <a
+            href="https://buymeatea.online/teeluck"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center gap-1.5 rounded-full border-2 bg-[#FFDD00] px-7 py-3 text-lg font-sans font-semibold text-ink transition hover:-translate-y-0.5 active:translate-y-0"
+            style={{ borderColor: accent }}
+          >
+            ☕ Buy me a tea
+            <span aria-hidden>↗</span>
+          </a>
         </motion.div>
 
         <motion.div

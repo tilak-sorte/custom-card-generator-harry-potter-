@@ -111,6 +111,79 @@ export default function LandingPage({ onBrowse }: Props) {
           <PillButton showArrow onClick={onBrowse} className="px-7 py-3 text-lg">
             📁 browse templates
           </PillButton>
+          <span className="relative inline-flex items-center">
+            <a
+              href="https://buymeatea.online/teeluck"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-1.5 rounded-full border-2 border-accent bg-[#FFDD00] px-7 py-3 text-lg font-sans font-semibold text-ink transition hover:-translate-y-0.5 active:translate-y-0"
+            >
+              ☕ Buy me a tea
+              <span aria-hidden>↗</span>
+            </a>
+
+            {/* handwritten curve pointing into the buy-me-a-tea button */}
+            <motion.svg
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.6 }}
+              viewBox="0 0 200 42"
+              aria-hidden
+              style={{ fontFamily: 'Caveat, cursive' }}
+              className="pointer-events-none absolute left-full top-1/2 ml-4 hidden w-[160px] -translate-y-1/2 text-ink/70 sm:block"
+            >
+              <defs>
+                <marker id="donateArrow" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto-start-reverse">
+                  <path d="M0 0 L8 4 L0 8 z" fill="currentColor" />
+                </marker>
+              </defs>
+              <path
+                id="donateCurve"
+                d="M14 20 L 178 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeDasharray="5 3"
+                strokeLinecap="round"
+                markerStart="url(#donateArrow)"
+              />
+              <text className="fill-current text-[17px] font-bold tracking-wide">
+                <textPath href="#donateCurve" startOffset="8%">
+                  consider donating
+                </textPath>
+              </text>
+            </motion.svg>
+
+            {/* mobile variant: curve above the button pointing down into it */}
+            <motion.svg
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.6 }}
+              viewBox="0 0 220 58"
+              aria-hidden
+              style={{ fontFamily: 'Caveat, cursive' }}
+              className="pointer-events-none absolute left-1/2 top-full mt-2 w-[190px] -translate-x-1/2 text-ink sm:hidden"
+            >
+              <defs>
+                <marker id="donateArrowM" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto-start-reverse">
+                  <path d="M0 3 L8 4.5 L0 6 L2 4.5 z" fill="currentColor" />
+                </marker>
+              </defs>
+              <path
+                id="donateCurveM"
+                d="M110 8 L 110 30"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeDasharray="5 3"
+                strokeLinecap="round"
+                markerStart="url(#donateArrowM)"
+              />
+              <text x="110" y="50" textAnchor="middle" className="fill-current text-[18px] font-bold tracking-wide">
+                consider donating
+              </text>
+            </motion.svg>
+          </span>
         </motion.div>
 
         <p className="mt-12 font-mono text-xs tracking-wide text-ink/50">
