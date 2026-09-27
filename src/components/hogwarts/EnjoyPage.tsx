@@ -54,7 +54,7 @@ export default function EnjoyPage({ houseName, houseEmoji, accent, onMakeAnother
             <span aria-hidden>↗</span>
           </a>
           <a href="https://kulhad.co/tilakdoestuff" target="_blank" rel="noopener noreferrer" className="transition hover:-translate-y-0.5 active:translate-y-0">
-            <img src="https://kulhad.co/api/button.png?text=Buy%20me%20a%20kulhad&amp;color=%238E3414" alt="Buy me a kulhad" height="30" />
+            <img src="https://kulhad.co/api/button.png?text=Buy%20me%20a%20kulhad&amp;color=%238E3414" alt="Buy me a kulhad" height="22" className="h-[22px] w-auto" />
           </a>
         </motion.div>
 
